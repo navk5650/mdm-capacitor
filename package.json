@@ -1,6 +1,6 @@
 {
   "name": "intune-mdm-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This will fetch key values from intune app configs",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -40,7 +40,7 @@
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\" --plugin=prettier-plugin-java",
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api AppConfigPluginPlugin --output-readme README.md --output-json dist/docs.json",
-    "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.mjs",
+    "build": "npm run clean && tsc && rollup -c rollup.config.mjs",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
