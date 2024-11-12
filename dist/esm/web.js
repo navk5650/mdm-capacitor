@@ -1,8 +1,8 @@
 import { WebPlugin } from '@capacitor/core';
 export class AppConfigPluginWeb extends WebPlugin {
-    async echo(options) {
-        console.log('ECHO', options);
-        return options;
+    async getValue(options) {
+        // Returning an object with a `value` key to match the expected return type
+        return { value: options.key };
     }
 }
 //# sourceMappingURL=web.js.map

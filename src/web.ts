@@ -3,8 +3,8 @@ import { WebPlugin } from '@capacitor/core';
 import type { AppConfigPlugin } from './definitions';
 
 export class AppConfigPluginWeb extends WebPlugin implements AppConfigPlugin {
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  async getValue(options: { key: string }): Promise<{ value: string }> {
+    // Returning an object with a `value` key to match the expected return type
+    return { value: options.key };
   }
 }

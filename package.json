@@ -1,6 +1,6 @@
 {
   "name": "intune-mdm-plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This will fetch key values from intune app configs",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

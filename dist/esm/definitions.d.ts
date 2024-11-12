@@ -1,6 +1,6 @@
 export interface AppConfigPlugin {
-    echo(options: {
-        value: string;
+    getValue(options: {
+        key: string;
     }): Promise<{
         value: string;
     }>;
